@@ -1,0 +1,13 @@
+{
+  "root": true,
+  "extends": ["zmi/base"],
+  "rules": {
+    "global-require": "off",
+    "no-case-declarations": "off",
+    "import/no-dynamic-require": "off",
+    "no-use-before-define": "off",
+    "no-restricted-syntax": "off",
+    "no-await-in-loop": "off",
+    "no-continue": "off"
+  }
+}

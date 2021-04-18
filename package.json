@@ -1,0 +1,33 @@
+{
+  "name": "eslint-plugin-hard",
+  "version": "0.0.1",
+  "description": "Strict specifications Vue.js",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "eslint-config",
+    "vue",
+    "vuejs",
+    "rules"
+  ],
+  "author": "zoy",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha tests --recursive",
+    "debug": "mocha --inspect \"tests/lib/**/*.js\" --reporter dot --timeout 60000"
+  },
+  "dependencies": {
+    "requireindex": "~1.1.0",
+    "vue-eslint-parser": "^7.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.1.0",
+    "eslint-config-zmi": "^1.2.4",
+    "mocha": "^7.2.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "license": "MIT"
+}
