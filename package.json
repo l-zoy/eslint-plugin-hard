@@ -18,6 +18,7 @@
     "debug": "mocha --inspect \"tests/lib/**/*.js\" --reporter dot --timeout 60000"
   },
   "dependencies": {
+    "lodash.isequal": "^4.5.0",
     "requireindex": "~1.1.0",
     "vue-eslint-parser": "^7.6.0"
   },
