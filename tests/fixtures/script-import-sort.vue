@@ -1,9 +1,13 @@
 <template></template>
 
-<script>
+<script lang="jsx">
 import vue from 'vue'
 
-export default {}
+export default {
+  render() {
+    return <div>asd</div>
+  }
+}
 </script>
 
 <style>
