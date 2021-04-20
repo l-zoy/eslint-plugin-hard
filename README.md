@@ -1,50 +1,48 @@
 # eslint-plugin-hard
 
-Strict specifications
+扩展 vue-eslint-plugin 规则, 它是严格的
 
-## Installation
+## 安装
 
-You'll first need to install [ESLint](http://eslint.org):
+您首先需要安装 [ESLint](http://eslint.org), 和[vue-eslint-plugin](https://github.com/vuejs/eslint-plugin-vue)
 
 ```
 $ npm i eslint --save-dev
+$ npm i vue-eslint-plugin --save-dev
 ```
 
-Next, install `eslint-plugin-hard`:
+接下来，安装 `eslint-plugin-hard`:
 
 ```
 $ npm install eslint-plugin-hard --save-dev
 ```
 
+## 用法:
 
-## Usage
-
-Add `hard` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
-
-```json
-{
-    "plugins": [
-        "hard"
-    ]
-}
-```
-
-
-Then configure the rules you want to use under the rules section.
+将`hard`添加到`.eslintrc`配置文件的插件部分。您可以省略`eslint-plugin-`前缀:
 
 ```json
 {
-    "rules": {
-        "hard/rule-name": 2
-    }
+  "extends": ["plugin:hard/recommended"],
+  "plugins": ["hard"]
 }
 ```
 
-## Supported Rules
+## 可用的规则:
 
-* Fill in provided rules here
-
-
-
-
-
+```json
+{
+  "rules": {
+    "not-template-annotation": 2,
+    // template 不能注释无用的dom元素, 只能是解释型注释
+    "attribute-erection-sequence": 2,
+    // 元素多行属性的时候需要从长到短进行排序
+    "not-template-logical-expressions": 2,
+    // 不能在template上使用逻辑表达式
+    "not-template-style": 2,
+    // 不能在template上使用style属性, 除非动态绑定
+    "script-import-sort": 2
+    // import 导入的顺序
+  }
+}
+```
