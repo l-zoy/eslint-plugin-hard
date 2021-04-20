@@ -30,7 +30,7 @@ $ npm install eslint-plugin-hard --save-dev
 
 ## 可用的规则:
 
-```json
+```js
 {
   "rules": {
     "not-template-annotation": 2,
