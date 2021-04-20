@@ -21,9 +21,15 @@ $ npm install eslint-plugin-hard --save-dev
 
 将`hard`添加到`.eslintrc`配置文件的插件部分。您可以省略`eslint-plugin-`前缀:
 
-```json
+```js
 {
-  "extends": ["plugin:hard/recommended"],
+  "extends": [
+    // 在此处添加更多通用规则集，例如:
+    // 'eslint:recommended',
+    "plugin:vue/vue3-recommended",
+    // 'plugin:vue/recommended' // 如果您正在使用 Vue.js 2.x，请使用此.
+    "plugin:hard/recommended"
+  ],
   "plugins": ["hard"]
 }
 ```
